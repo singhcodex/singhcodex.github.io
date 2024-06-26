@@ -13,8 +13,8 @@ const links = [
     path: "/services",
   },
   {
-    name: "experience",
-    path: "/experience",
+    name: "resume",
+    path: "/resume",
   },
   {
     name: "project",
@@ -35,6 +35,7 @@ const Nav = () => {
         return (
           <Link
             href={link.path}
+            key={index}
             className={`${
               link.path === pathname && "text-accent border-b-2 border-accent"
             } capitalize font-medium hover:text-accent transition-all`}
