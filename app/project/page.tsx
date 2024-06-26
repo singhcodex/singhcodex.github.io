@@ -69,7 +69,7 @@ const projects = [
   },
 ];
 
-const project = () => {
+const Project = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (swiper: { activeIndex: any }) => {
@@ -182,4 +182,4 @@ const project = () => {
   );
 };
 
-export default project;
+export default Project;
